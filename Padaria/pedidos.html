@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doceselendas/pedido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+     <header>
+    <nav class="menu-topo">
+        <a href="index.html">Início</a>
+        <a href="pedidos.html">Pedidos</a>
+        <a href="contato.html">Contato</a>
+        <a href="historia.html">História</a>
+        <a href="cadastro.html">Cadastre-se</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
+    <div class="logoform-p">
+        <img src="imagens/logotipopadaria.png" alt="logotipo" width="20px">
+    </div>
+    <main>
+        <div class="container">
+            <h1>Faça seu Pedido</h1>
+            <p>Selecione os itens que irão te acompanhar nessa aventura.</p>
+
+            <!-- Doces e Salgados -->
+            <h3>Doces e Salgados</h3>
+            <div class="container-produtos">
+
+                <!-- Pão do Bolsão -->
+                <div class="produto-item">
+                    <img src="imagens/bolsao.png" alt="Pão do Bolsão" style="width:80px; height:auto;">
+                    <h5>Pão do Bolsão</h5>
+                    <p>R$ 7,50</p>
+                    <label>Unid:
+                        <input type="number" name="pao-bolsao" min="0" value="0" class="quantidade-input"
+                            data-preco="7.50">
+                    </label>
+                </div>
+
+                <!-- Pão Aragorn -->
+                <div class="produto-item">
+                    <img src="imagens/brioche.png" alt="Pão Aragorn" style="width:80px; height:auto;">
+                    <h5>Pão Aragorn</h5>
+                    <p>R$ 8,00</p>
+                    <label>Unid:
+                        <input type="number" name="pao-aragorn" min="0" value="0" class="quantidade-input"
+                            data-preco="8.00">
+                    </label>
+                </div>
+
+                <!-- Broa do Condado -->
+                <div class="produto-item">
+                    <img src="imagens/paoamendoim.png" alt="Broa do Condado" style="width:80px; height:auto;">
+                    <h5>Broa do Condado</h5>
+                    <p>R$ 5,00</p>
+                    <label>Unid:
+                        <input type="number" name="broa-do-condado" min="0" value="0" class="quantidade-input"
+                            data-preco="5.00">
+                    </label>
+                </div>
+
+                <!-- Fornada de Erebor -->
+                <div class="produto-item">
+                    <img src="imagens/pao-preto.jpeg" alt="Fornada de Erebor" style="width:80px; height:auto;">
+                    <h5>Fornada de Erebor</h5>
+                    <p>R$ 12,00</p>
+                    <label>Unid:
+                        <input type="number" name="fornada-erebor" min="0" value="0" class="quantidade-input"
+                            data-preco="12.00">
+                    </label>
+                </div>
+
+                <!-- Jóia de Arwen -->
+                <div class="produto-item">
+                    <img src="imagens/rocfrutas.png" alt="Jóia de Arwen" style="width:80px; height:auto;">
+                    <h5>Jóia de Arwen</h5>
+                    <p>R$ 16,50</p>
+                    <label>Unid:
+                        <input type="number" name="joia-arwen" min="0" value="0" class="quantidade-input"
+                            data-preco="16.50">
+                    </label>
+                </div>
+
+                <!-- Lembrança de Valfenda -->
+                <div class="produto-item">
+                    <img src="imagens/pao-frutas.png" alt="Lembrança de Valfenda" style="width:80px; height:auto;">
+                    <h5>Lembrança de Valfenda</h5>
+                    <p>R$ 12,50</p>
+                    <label>Unid:
+                        <input type="number" name="lembranca-valfenda" min="0" value="0" class="quantidade-input"
+                            data-preco="12.50">
+                    </label>
+                </div>
+
+                <!-- Cookies do Poney Saltitante -->
+                <div class="produto-item">
+                    <img src="imagens/cookies.png" alt="Cookies do Poney Saltitante" style="width:80px; height:auto;">
+                    <h5>Cookies do Poney Saltitante</h5>
+                    <p>R$ 6,00 cada</p>
+                    <div class="sabor-opcoes">
+                        <label>Chocolate:
+                            <input type="number" name="cookies-chocolate" min="0" value="0" class="quantidade-input"
+                                data-preco="6.00">
+                        </label>
+                        <label>Chocolate Branco:
+                            <input type="number" name="cookies-choc-branco" min="0" value="0" class="quantidade-input"
+                                data-preco="6.00">
+                        </label>
+                        <label>Pistache:
+                            <input type="number" name="cookies-pistache" min="0" value="0" class="quantidade-input"
+                                data-preco="6.00">
+                        </label>
+                        <label>Frutas Vermelhas:
+                            <input type="number" name="cookies-frutas-vermelhas" min="0" value="0"
+                                class="quantidade-input" data-preco="6.00">
+                        </label>
+                        <label>Avelã:
+                            <input type="number" name="cookies-avela" min="0" value="0" class="quantidade-input"
+                                data-preco="6.00">
+                        </label>
+                        <label>Meio-amargo:
+                            <input type="number" name="cookies-meio-amargo" min="0" value="0" class="quantidade-input"
+                                data-preco="6.00">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Ferradura de Brego -->
+                <div class="produto-item">
+                    <img src="imagens/crossant.png" alt="Ferradura de Brego" style="width:80px; height:auto;">
+                    <h5>Ferradura de Brego</h5>
+                    <p>R$ 8,00 cada</p>
+                    <div class="sabor-opcoes">
+                        <label>Calabresa:
+                            <input type="number" name="ferradura-calabresa" min="0" value="0" class="quantidade-input"
+                                data-preco="8.00">
+                        </label>
+                        <label>Presunto e Queijo:
+                            <input type="number" name="ferradura-presunto-queijo" min="0" value="0"
+                                class="quantidade-input" data-preco="8.00">
+                        </label>
+                        <label>Frango:
+                            <input type="number" name="ferradura-frango" min="0" value="0" class="quantidade-input"
+                                data-preco="8.00">
+                        </label>
+                        <label>Vegetais:
+                            <input type="number" name="ferradura-vegetais" min="0" value="0" class="quantidade-input"
+                                data-preco="8.00">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <h3>Lanches</h3>
+        <div class="container-produtos">
+
+            <div class="produto-item">
+                <img src="imagens/samwise.jpg" alt="Samwise Gamgee" style="width:80px; height:auto;">
+                <h5>Samwise Gamgee</h5>
+                <p>R$ 35,00</p>
+                <label>Unid:
+                    <input type="number" name="samwise-gamgee" min="0" value="0" class="quantidade-input"
+                        data-preco="35.00">
+                </label>
+            </div>
+
+            <div class="produto-item">
+                <img src="imagens/banuete-anoes.jpg" alt="Frodo Bolseiro" style="width:80px; height:auto;">
+                <h5>Frodo Bolseiro</h5>
+                <p>R$ 35,00</p>
+                <label>Unid:
+                    <input type="number" name="frodo-bolseiro" min="0" value="0" class="quantidade-input"
+                        data-preco="35.00">
+                </label>
+            </div>
+
+            <div class="produto-item">
+                <img src="imagens/necromante.jpg" alt="O Necromante" style="width:80px; height:auto;">
+                <h5>O Necromante</h5>
+                <p>R$ 32,00</p>
+                <label>Unid:
+                    <input type="number" name="o-necromante" min="0" value="0" class="quantidade-input"
+                        data-preco="32.00">
+                </label>
+            </div>
+
+            <div class="produto-item">
+                <img src="imagens/montanhaperdicao2.jpg" alt="Montanha da Perdição" style="width:80px; height:auto;">
+                <h5>Montanha da Perdição (Lanche)</h5>
+                <p>R$ 38,00</p>
+                <label>Unid:
+                    <input type="number" name="montanha-perdicao-lanche" min="0" value="0" class="quantidade-input"
+                        data-preco="38.00">
+                </label>
+            </div>
+
+            <div class="produto-item">
+                <img src="imagens/fome-hobbit.jpg" alt="Fome de Hobbit" style="width:80px; height:auto;">
+                <h5>Fome de Hobbit</h5>
+                <p>R$ 35,00</p>
+                <label>Unid:
+                    <input type="number" name="fome-hobbit" min="0" value="0" class="quantidade-input"
+                        data-preco="35.00">
+                </label>
+            </div>
+
+            <div class="produto-item">
+                <img src="" alt="Gollum" style="width:80px; height:auto;">
+                <h5>Gollum</h5>
+                <p>R$ 38,00</p>
+                <label>Unid:
+                    <input type="number" name="gollum" min="0" value="0" class="quantidade-input" data-preco="38.00">
+                </label>
+            </div>
+
+            <div class="produto-item">
+                <img src="imagens/normal.png" alt="Faramir" style="width:80px; height:auto;">
+                <h5>Faramir</h5>
+                <p>R$ 38,00</p>
+                <label>Unid:
+                    <input type="number" name="faramir" min="0" value="0" class="quantidade-input" data-preco="38.00">
+                </label>
+            </div>
+
+        </div>
+        <h3>Bebidas</h3>
+        <div class="container-produtos">
+
+            <div class="produto-item">
+                <img src="imagens/expresso.png" alt="Café da Taverna" style="width:80px; height:auto;">
+                <h5>Café da Taverna</h5>
+                <p>R$ 5,50</p>
+                <label>Unid:
+                    <input type="number" name="cafe-taverna" min="0" value="0" class="quantidade-input"
+                        data-preco="5.50">
+                </label>
+            </div>
+
+            <div class="produto-item">
+                <img src="imagens/cafe-gourmet.jpeg" alt="Café Minas Tirith" style="width:80px; height:auto;">
+                <h5>Café Minas Tirith</h5>
+                <p>R$ 6,00</p>
+                <label>Unid:
+                    <input type="number" name="cafe-minas-tirith" min="0" value="0" class="quantidade-input"
+                        data-preco="6.00">
+                </label>
+            </div>
+
+            <div class="produto-item">
+                <img src="imagens/cha.png" alt="Chá do Bolseiro" style="width:80px; height:auto;">
+                <h5>Chá do Bolseiro</h5>
+                <p>R$ 7,20</p>
+                <label>Unid:
+                    <input type="number" name="cha-bolseiro" min="0" value="0" class="quantidade-input"
+                        data-preco="7.20">
+                </label>
+            </div>
+
+            <div class="produto-item">
+                <img src="imagens/chocquent.png" alt="Vulcão de Mordor" style="width:80px; height:auto;">
+                <h5>Vulcão de Mordor</h5>
+                <p>R$ 8,00</p>
+                <div class="sabor-opcoes">
+                    <label>Meio-amargo:
+                        <input type="number" name="choc-meio-amargo" min="0" value="0" class="quantidade-input"
+                            data-preco="8.00">
+                    </label>
+                    <label>Ao leite:
+                        <input type="number" name="choc-ao-leite" min="0" value="0" class="quantidade-input"
+                            data-preco="8.00">
+                    </label>
+                    <label>Pistache:
+                        <input type="number" name="choc-pistache" min="0" value="0" class="quantidade-input"
+                            data-preco="8.00">
+                    </label>
+                </div>
+            </div>
+
+            <div class="produto-item">
+                <img src="imagens/capuccino.png" alt="Fogo de Mordor" style="width:80px; height:auto;">
+                <h5>Fogo de Mordor</h5>
+                <p>R$ 7,00</p>
+                <div class="sabor-opcoes">
+                    <label>Baunilha:
+                        <input type="number" name="capuccino-baunilha" min="0" value="0" class="quantidade-input"
+                            data-preco="7.00">
+                    </label>
+                    <label>Caramelo Salgado:
+                        <input type="number" name="capuccino-caramelo" min="0" value="0" class="quantidade-input"
+                            data-preco="7.00">
+                    </label>
+                    <label>Cacau com Canela:
+                        <input type="number" name="capuccino-cacau" min="0" value="0" class="quantidade-input"
+                            data-preco="7.00">
+                    </label>
+                </div>
+            </div>
+
+            <div class="produto-item">
+                <img src="imagens/frapuccino_baunilha.png" alt="Precioso" style="width:80px; height:auto;">
+                <h5>Precioso</h5>
+                <p>R$ 14,50</p>
+                <div class="sabor-opcoes">
+                    <label>Flor de Baunilha:
+                        <input type="number" name="frap-baunilha" min="0" value="0" class="quantidade-input"
+                            data-preco="14.50">
+                    </label>
+                    <label>Caramelo Latte:
+                        <input type="number" name="frap-caramelo" min="0" value="0" class="quantidade-input"
+                            data-preco="14.50">
+                    </label>
+                    <label>Chocolate Belga:
+                        <input type="number" name="frap-choc" min="0" value="0" class="quantidade-input"
+                            data-preco="14.50">
+                    </label>
+                </div>
+            </div>
+
+            <div class="produto-item">
+                <img src="imagens/suco.png" alt="Sucos" style="width:80px; height:auto;">
+                <h5>Sucos</h5>
+                <p>R$ 10,50</p>
+                <div class="sabor-opcoes">
+                    <label>Morango:
+                        <input type="number" name="suco-morango" min="0" value="0" class="quantidade-input"
+                            data-preco="10.50">
+                    </label>
+                    <label>Laranja:
+                        <input type="number" name="suco-laranja" min="0" value="0" class="quantidade-input"
+                            data-preco="10.50">
+                    </label>
+                    <label>Abacaxi:
+                        <input type="number" name="suco-abacaxi" min="0" value="0" class="quantidade-input"
+                            data-preco="10.50">
+                    </label>
+                    <label>Maracujá:
+                        <input type="number" name="suco-maracuja" min="0" value="0" class="quantidade-input"
+                            data-preco="10.50">
+                    </label>
+                    <label>Limão:
+                        <input type="number" name="suco-limao" min="0" value="0" class="quantidade-input"
+                            data-preco="10.50">
+                    </label>
+                    <label>Manga:
+                        <input type="number" name="suco-manga" min="0" value="0" class="quantidade-input"
+                            data-preco="10.50">
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        <h3>Bolos</h3>
+        <div class="container-produtos">
+
+            <!-- Bolo de Abacaxi -->
+            <div class="produto-item">
+                <img src="imagens/bolo-a.png" alt="Bolo de Abacaxi" style="width:120px; object-fit: cover;">
+                <h5>Bolo de Abacaxi</h5>
+                <p>R$ 45,00/kg</p>
+                <label>Qtd (kg):
+                    <input type="number" name="bolo-abacaxi" min="0" step="0.5" value="0" class="quantidade-input"
+                        data-preco="45.00">
+                </label>
+            </div>
+
+            <!-- Bolo de Maçã Verde -->
+            <div class="produto-item">
+                <img src="imagens/bolo-verde.png" alt="Bolo de Maçã Verde" style="width:120px; object-fit: cover;">
+                <h5>Bolo de Maçã Verde</h5>
+                <p>R$ 50,00/kg</p>
+                <label>Qtd (kg):
+                    <input type="number" name="bolo-maca-verde" min="0" step="0.5" value="0" class="quantidade-input"
+                        data-preco="50.00">
+                </label>
+            </div>
+
+            <!-- Bolo de Maracujá -->
+            <div class="produto-item">
+                <img src="imagens/bolo-maracuja.png" alt="Bolo de Maracujá" style="width:120px; object-fit: cover;">
+                <h5>Bolo de Maracujá</h5>
+                <p>R$ 48,00/kg</p>
+                <label>Qtd (kg):
+                    <input type="number" name="bolo-maracuja" min="0" step="0.5" value="0" class="quantidade-input"
+                        data-preco="48.00">
+                </label>
+            </div>
+
+            <!-- Bolo Trufado de Chocolate -->
+            <div class="produto-item">
+                <img src="imagens/trufado.png" alt="Bolo Trufado de Chocolate" style="width:120px; object-fit: cover;">
+                <h5>Bolo Trufado de Chocolate</h5>
+                <p>R$ 60,00/kg</p>
+                <label>Qtd (kg):
+                    <input type="number" name="bolo-choc-trufado" min="0" step="0.5" value="0" class="quantidade-input"
+                        data-preco="60.00">
+                </label>
+            </div>
+
+            <!-- Bolo de Coco com Frutas Vermelhas -->
+            <div class="produto-item">
+                <img src="imagens/bolo-frutas.png" alt="Bolo de Coco com Frutas Vermelhas"
+                    style="width:120px; object-fit: cover;">
+                <h5>Bolo de Coco com Frutas Vermelhas</h5>
+                <p>R$ 55,00/kg</p>
+                <label>Qtd (kg):
+                    <input type="number" name="bolo-frutas-vermelhas" min="0" step="0.5" value="0"
+                        class="quantidade-input" data-preco="55.00">
+                </label>
+            </div>
+
+            <!-- Bolo Personalizado -->
+            <div class="produto-item">
+                <img src="imagens/bolo-branco.png" alt="Bolo Personalizado" style="width:120px; object-fit: cover;">
+                <h5>Bolo Personalizado</h5>
+                <p>R$ 65,00/kg</p>
+                <label>Qtd (kg):
+                    <input type="number" name="bolo-personalizado" min="0" step="0.5" value="0" class="quantidade-input"
+                        data-preco="65.00">
+                </label>
+                <label for="mensagem">Descreva seu bolo pesonalizado:
+                    <textarea id="mensagem" name="mensagem" rows="5" cols="80" required></textarea>
+                </label>
+            </div>
+        </div>
+        <!-- fecha container-produtos de bolos -->
+
+
+        <div class="total-box">
+            <span>Total do Pedido: R$</span>
+            <input type="text" name="total-pedido" placeholder="0,00" readonly>
+        </div>
+                <legend>Dados</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Qem és nobre viajante...">
+                 <label for="telefone">Tel:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}" required
+                    placeholder="(..)....-....">
+                    <button type="submit">Enviar</button><br>
+        
+        <footer>
+            <p>&copy; 2025 Doces e Lendas. Todos os direitos reservados.</p>
+
+        </footer>
