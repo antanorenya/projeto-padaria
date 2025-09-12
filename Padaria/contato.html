@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doceselendas/cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ===== HEADER E MENU ===== -->
+    <header>
+        <nav class="menu-topo">
+            <a href="index.html">Início</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="contato.html">Contato</a>
+            <a href="historia.html">História</a>
+            <a href="cadastro.html">Cadastre-se</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+
+        <div class="logoform-co">
+            <img src="imagens/logotipopadaria.png" alt="Logotipo Padaria" width="200">
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+        <h1>Caro viajante</h1>
+        <form action="processa-dados" method="post">
+            <fieldset style="width: 50%;">
+                <legend>Fale-Conosco</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="telefone">Tel:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}" required
+                    placeholder="(..)....-...."><br><br>
+            </fieldset>
+
+            <fieldset style="width: 50%;">
+                <label for="assunto">Assunto:</label><br>
+                <select id="assunto" name="assunto" required>
+                    <option value="">-- Selecione um assunto --</option>
+                    <option value="elogios">Elogios</option>
+                    <option value="informações">Informações</option>
+                    <option value="sugestões">Sugestões</option>
+                    <option value="reclamações">Reclamações</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="80" required></textarea><br><br>
+
+                <button type="submit">Enviar ao Condado</button>
+            </fieldset>
+
+            <h4>Responderemos mais rápido do que um pão quentinho sai do forno!</h4>
+
+            <video width="80%" autoplay loop muted>
+                <source src="IMAGENS/videopao.mov" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </form>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2025 Padaria Doces e Lendas. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

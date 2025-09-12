@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doceselendas/cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="menu-topo">
+            <a href="index.html">Início</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="contato.html">Contato</a>
+            <a href="historia.html">História</a>
+            <a href="cadastro.html">Cadastre-se</a>
+            <a href="feedback.html">Feedback</a>
+
+        </div>
+    </div>
+    <div class="logoform-ca">
+        <img src="imagens/logotipopadaria.png" alt="logotipo" width="200px">
+       
+        
+        <h1>Cadastro do viajante</h1>
+    </header>
+
+    </div>
+    <p>Junte-se à nossa comunidade de hobbits, elfos, anões e orcs famintos e receba novidades e promoções direto do
+        Condado.</p>
+
+    <main>
+        <form action="processa-dados" method="post">
+            <fieldset>
+                <legend>Dados do Aventureiro</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Qem és nobre viajante...">
+
+                <label for="data-nasc">DN:</label>
+                <input type="date" id="data-nasc" name="data-nasc">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="telefone">Tel:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\)\s[0-9]{4,5}-[0-9]{4}" required
+                    placeholder="(XX) XXXXX-XXXX">
+            </fieldset>
+
+            <fieldset>
+                <legend>Morada do Aventureiro</legend>
+                <label for="rua">Endereço:</label>
+                <input type="text" id="rua" name="rua">
+
+                <label for="numero">Numero:</label>
+                <input type="number" id="numero" name="numero">
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro">
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" title="CEP no formato XXXXX-XXX">
+            </fieldset>
+
+            <input type="checkbox" id="promocoes" name="promocoes" required>
+            <label for="promocoes">Aceito receber promoções por e-mail.</label>
+            <br><br>
+            <input type="checkbox" id="termos_uso" name="termos_uso" required>
+            <label for="termos_uso">Li e aceito os termos de uso do site.</label>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer >
+        <p>&copy; 2025 Doces e Lendas. Todos os direitos reservados.</p>
+
+</footer>
+
+    </div>
+</body>
+
+</html>

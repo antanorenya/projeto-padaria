@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doceselendass/feedback</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="menu-topo">
+            <a href="index.html">Início</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="contato.html">Contato</a>
+            <a href="historia.html">História</a>
+            <a href="cadastro.html">Cadastre-se</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+
+        <div class="logoform-f">
+            <img src="imagens/logotipopadaria.png" alt="Logotipo Padaria" width="200">
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <h1>Pesquisa de opinião!</h1>
+        <p>Sua opinião é como fermento: nos ajuda a crescer!</p>
+
+        <form action="processa-dados" method="post" class="form-feedback">
+            <!-- Nome e Email -->
+            <fieldset>
+                <legend>Caro viajante</legend>
+                <label for="nome">Seu Nome (Opcional):</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+                <label for="email">Seu E-mail (Opcional):</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+            </fieldset>
+
+            <!-- Experiência geral -->
+            <fieldset>
+                <legend>Como foi sua experiência na Padaria Doces e Lendas?</legend>
+                <div class="option-group">
+                    <input type="radio" id="exp-excelente" name="experiencia" value="excelente" required>
+                    <label for="exp-excelente">Excelente. Melhor que um banquete no Salão dos Anões</label>
+                </div>
+                <div class="option-group">
+                    <input type="radio" id="exp-bom" name="experiencia" value="bom">
+                    <label for="exp-bom">Boa. Saí satisfeito e feliz</label>
+                </div>
+                <div class="option-group">
+                    <input type="radio" id="exp-razoavel" name="experiencia" value="razoavel">
+                    <label for="exp-razoavel">Razoável. Podia ser melhor</label>
+                </div>
+                <div class="option-group">
+                    <input type="radio" id="exp-ruim" name="experiencia" value="ruim">
+                    <label for="exp-ruim">Ruim. Meu dragão interior ficou desapontado</label>
+                </div>
+            </fieldset>
+
+           
+
+           <!-- Produtos -->
+<fieldset>
+    <legend>Como avalia o sabor, qualidade e variedade de produtos?</legend>
+
+    <div class="option-group">
+        <input type="radio" id="prod-excelente" name="produto" value="excelente" required>
+        <label for="prod-excelente">Excelente. Digno de um festim élfico</label>
+    </div>
+
+    <div class="option-group">
+        <input type="radio" id="prod-bom" name="produto" value="bom">
+        <label for="prod-bom">Bom. Comeria de novo</label>
+    </div>
+
+    <div class="option-group">
+        <input type="radio" id="prod-fraco" name="produto" value="fraco">
+        <label for="prod-fraco">Fraco. Esperava mais magia</label>
+    </div>
+
+    <div class="option-group">
+        <input type="radio" id="prod-ruim" name="produto" value="ruim">
+        <label for="prod-ruim">Ruim. Parece ter saído da cozinha de um orc</label>
+    </div>
+</fieldset>
+
+<!-- Atendimento -->
+<fieldset>
+    <legend>E o atendimento dos nossos hobbits padeiros?</legend>
+
+    <div class="option-group">
+        <input type="radio" id="at-encantador" name="atendimento" value="encantador" required>
+        <label for="at-encantador">Encantador. Me senti no Condado.</label>
+    </div>
+
+    <div class="option-group">
+        <input type="radio" id="at-amigavel" name="atendimento" value="amigavel">
+        <label for="at-amigavel">Amigável. Fui bem recebido.</label>
+    </div>
+
+    <div class="option-group">
+        <input type="radio" id="at-neutro" name="atendimento" value="neutro">
+        <label for="at-neutro">Neutro. Nada de especial.</label>
+    </div>
+
+    <div class="option-group">
+        <input type="radio" id="at-desagradavel" name="atendimento" value="desagradavel">
+        <label for="at-desagradavel">Desagradável. Me senti um orc na taverna errada.</label>
+    </div>
+</fieldset>
+
+<!-- Indicação -->
+<fieldset>
+    <legend>Você indicaria a padaria Paes e Lendas para outros viajantes?</legend>
+
+    <div class="option-group">
+        <input type="radio" id="ind-sim" name="indicaria" value="sim" required>
+        <label for="ind-sim">Sim. Com certeza.</label>
+    </div>
+
+    <div class="option-group">
+        <input type="radio" id="ind-talvez" name="indicaria" value="talvez">
+        <label for="ind-talvez">Talvez. Depende da aventura.</label>
+    </div>
+
+    <div class="option-group">
+        <input type="radio" id="ind-nao" name="indicaria" value="nao">
+        <label for="ind-nao">Não, guardarei esse segredo só para mim.</label>
+    </div>
+</fieldset>
+
+<!-- Comentários -->
+<fieldset>
+    <legend>Pergaminho para deixar sua mensagem (opcional)</legend>
+
+    <label for="comentarios">Mensagem:</label>
+    <textarea id="comentarios" name="comentarios" rows="5"></textarea>
+
+    <div class="option-group">
+        <input type="checkbox" id="publica" name="publica" value="sim">
+        <label for="publica">Autorizo a publicação deste depoimento no site (sem exibir e-mail).</label>
+    </div>
+</fieldset>
+
+<button type="submit">Enviar Pergaminho</button>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Padaria Doces e Lendas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
