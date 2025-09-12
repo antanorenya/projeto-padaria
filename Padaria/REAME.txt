@@ -1,0 +1,3 @@
+Pagina index contem o conteudo do site da padaria, com menu de cardapio separado por tabelas com bordar , carrinho e a historia da padaria tematica. 
+html separdos para cada formulario  
+iserido img e video
